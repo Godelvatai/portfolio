@@ -1,0 +1,51 @@
+.about-container, .resume-container {
+  width: 50%;
+  display: inline-block;
+}
+
+.about-content {
+  width: 80%;
+  margin: 0 10%;
+}
+
+.projects-container {
+  width: 250px;
+  margin: 50px auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.projects-carousel {
+  display: flex;
+  transition: transform 1s ease;
+}
+
+.card {
+  min-width: 250px;
+  margin-right: 20px;
+}
+
+mat-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.carousel-control {
+  position: absolute;
+  bottom: 0;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}

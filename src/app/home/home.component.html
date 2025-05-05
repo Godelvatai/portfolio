@@ -1,0 +1,32 @@
+<div>
+  <div class="about-container">
+    <div class="about-content">
+      <h1>About Me</h1>
+      <h2>Lorem ipsum blah blah blah</h2>
+      <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Feugiat fringilla magnis praesent senectus facilisis potenti risus pretium. Phasellus convallis at tempor porta mattis luctus. Faucibus ornare tortor aliquet dictumst hac elementum. Nam elit montes felis viverra, odio aptent morbi malesuada imperdiet. Magna mauris conubia euismod amet ullamcorper. Adipiscing egestas blandit, faucibus euismod enim sodales.</p>
+      <button routerLink="/about">Read More About Me</button>
+    </div>
+  </div>
+
+  <div class="resume-container">
+
+  </div>
+
+  <div class="projects-container">
+    <div class="projects-carousel" #carousel>
+      <div *ngFor="let card of cards; let i = index" class="card">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>{{ card.title }}</mat-card-title>
+            <mat-card-subtitle>{{ card.subtitle }}</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <p>{{ card.content }}</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+    <button (click)="prevCard()" class="carousel-control prev"><</button>
+    <button (click)="nextCard()" class="carousel-control next">></button>
+  </div>
+</div>
